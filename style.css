@@ -1,4 +1,5 @@
 :root {
+  --color: rgba(227, 197, 0, 0.908);
   --bg: linear-gradient(
     190deg,
     rgba(36, 65, 212, 1) 0%,
@@ -8,13 +9,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
 }
 body {
   font-family: "poppins", sans-serif;
-  color: white;
+  background: var(--bg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(10, 8, 8);
 }
 /* Nav-bar */
 .nav {
@@ -29,4 +34,15 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
+}
+.nav .nav-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.nav .nav-logo span {
+  color: var(--color);
+}
+.nav .nav-nafigasi {
+  color: white;
 }
