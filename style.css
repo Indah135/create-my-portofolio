@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 
-/* Background Accessory */
+/* Background Accessorise */
 .bg-accessorise {
   position: fixed;
   top: 50%;
@@ -112,14 +112,14 @@ body {
   margin-bottom: 20px;
 }
 
-.social-icons a {
+.icons a {
   color: var(--accent);
   margin-right: 15px;
   font-size: 1.5rem;
   transition: 0.3s;
 }
 
-.social-icons a:hover {
+.icons a:hover {
   color: white;
   transform: scale(1.2);
 }
