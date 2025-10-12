@@ -16,6 +16,7 @@ body {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #1a1a1a;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -59,36 +60,37 @@ body {
 /* Hero Section */
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   height: 100vh;
-  text-align: center;
-  padding-top: 60px;
+  padding: 0 10%;
+  text-align: left;
+  gap: 40px;
 }
 
-.hero .intro h2 {
+.intro {
+  max-width: 50%;
+}
+
+.intro h2 {
   font-size: 2.5rem;
   color: var(--accent);
-  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.hero .intro h2 span {
+.intro h2 span {
   color: white;
 }
 
-.hero .intro p {
-  margin-top: 10px;
+.intro p {
   font-size: 1.1rem;
   color: #2f2f2f;
-}
-
-.social-icons {
-  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .social-icons a {
   color: var(--accent);
-  margin: 0 10px;
+  margin-right: 15px;
   font-size: 1.5rem;
   transition: 0.3s;
 }
@@ -96,4 +98,38 @@ body {
 .social-icons a:hover {
   color: white;
   transform: scale(1.2);
+}
+
+/* Photo Section */
+.photo img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+
+  .photo img {
+    width: 500px;
+    height: 500x;
+  }
 }
