@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 body {
@@ -113,13 +113,15 @@ body {
 
 .icons a {
   color: var(--accent);
+  text-align: center;
   margin-right: 15px;
   font-size: 1.5rem;
   transition: 0.3s;
+  font-size: 12px;
 }
 
 .icons a:hover {
-  color: white;
+  text-shadow: 0 0 8px var(--accent);
   transform: scale(1.2);
 }
 
