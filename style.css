@@ -93,11 +93,11 @@ body {
 }
 
 .intro {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .intro h2 {
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   color: var(--accent);
   margin-bottom: 10px;
 }
@@ -111,6 +111,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Icons */
 .icons a {
   color: var(--accent);
   text-align: center;
@@ -205,17 +206,17 @@ body {
 /* Contact */
 .contact {
   background: white;
-  padding: 100px 10%;
+  padding: 100px 20%;
   text-align: center;
 }
 
 .contact h2 {
   color: var(--accent);
-  margin-bottom: 15px;
+  margin-bottom: 70px;
 }
 
 .contact p {
-  font-size: 1rem;
+  font-size: 5rem;
   color: #333;
 }
 
