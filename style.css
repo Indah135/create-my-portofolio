@@ -121,6 +121,15 @@ body {
   font-size: 12px;
 }
 
+.contact .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+}
+
 .icons a:hover {
   text-shadow: 0 0 8px var(--accent);
   transform: scale(1.2);
@@ -213,6 +222,7 @@ body {
 .contact h2 {
   color: var(--accent);
   margin-bottom: 70px;
+  margin: 0 auto 70px auto;
 }
 
 .contact p {
