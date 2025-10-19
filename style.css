@@ -115,10 +115,18 @@ body {
 .icons a {
   color: var(--accent);
   text-align: center;
+  gap: 5px;
   margin-right: 15px;
   font-size: 1.5rem;
   transition: 0.3s;
   font-size: 12px;
+}
+
+.icons a i {
+  text-align: center;
+  gap: 5px;
+  width: 250px;
+  height: 25px;
 }
 
 .contact .icons {
@@ -137,8 +145,8 @@ body {
 
 /* Photo */
 .photo img {
-  width: 470px;
-  height: 470px;
+  width: 490px;
+  height: 480px;
   border-radius: 50%;
   object-fit: cover;
   border: 6px solid rgba(255, 255, 255, 0.8);
